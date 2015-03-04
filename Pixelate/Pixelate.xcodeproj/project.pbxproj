@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		402C9FB519BF45D200008DFA /* PXComposeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C9FB419BF45D200008DFA /* PXComposeView.m */; };
+		40A9915A19A22BDC0063ACA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A9915919A22BDC0063ACA7 /* Foundation.framework */; };
+		40A9915C19A22BDC0063ACA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A9915B19A22BDC0063ACA7 /* CoreGraphics.framework */; };
+		40A9915E19A22BDC0063ACA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A9915D19A22BDC0063ACA7 /* UIKit.framework */; };
+		40A9916419A22BDC0063ACA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40A9916219A22BDC0063ACA7 /* InfoPlist.strings */; };
+		40A9916619A22BDC0063ACA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9916519A22BDC0063ACA7 /* main.m */; };
+		40A9916A19A22BDC0063ACA7 /* PXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9916919A22BDC0063ACA7 /* PXAppDelegate.m */; };
+		40A9916C19A22BDC0063ACA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A9916B19A22BDC0063ACA7 /* Images.xcassets */; };
+		40A9917319A22BDD0063ACA7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A9917219A22BDD0063ACA7 /* XCTest.framework */; };
+		40A9917419A22BDD0063ACA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A9915919A22BDC0063ACA7 /* Foundation.framework */; };
+		40A9917519A22BDD0063ACA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A9915D19A22BDC0063ACA7 /* UIKit.framework */; };
+		40A9917D19A22BDD0063ACA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40A9917B19A22BDD0063ACA7 /* InfoPlist.strings */; };
+		40A9917F19A22BDD0063ACA7 /* PixelateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9917E19A22BDD0063ACA7 /* PixelateTests.m */; };
+		40A9918919A3893E0063ACA7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A9918819A3893E0063ACA7 /* MainStoryboard.storyboard */; };
+		40A9918C19A38F600063ACA7 /* PXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9918B19A38F600063ACA7 /* PXViewController.m */; };
+		40A9918E19A9B5E70063ACA7 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 40A9918D19A9B5E70063ACA7 /* ReadMe.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40A9917619A22BDD0063ACA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40A9914E19A22BDC0063ACA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A9915519A22BDC0063ACA7;
+			remoteInfo = Pixelate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		402C9FB319BF45D200008DFA /* PXComposeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXComposeView.h; sourceTree = "<group>"; };
+		402C9FB419BF45D200008DFA /* PXComposeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXComposeView.m; sourceTree = "<group>"; };
+		40A9915619A22BDC0063ACA7 /* Pixelate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pixelate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A9915919A22BDC0063ACA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40A9915B19A22BDC0063ACA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		40A9915D19A22BDC0063ACA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40A9916119A22BDC0063ACA7 /* Pixelate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pixelate-Info.plist"; sourceTree = "<group>"; };
+		40A9916319A22BDC0063ACA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40A9916519A22BDC0063ACA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40A9916719A22BDC0063ACA7 /* Pixelate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pixelate-Prefix.pch"; sourceTree = "<group>"; };
+		40A9916819A22BDC0063ACA7 /* PXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXAppDelegate.h; sourceTree = "<group>"; };
+		40A9916919A22BDC0063ACA7 /* PXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXAppDelegate.m; sourceTree = "<group>"; };
+		40A9916B19A22BDC0063ACA7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		40A9917119A22BDD0063ACA7 /* PixelateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A9917219A22BDD0063ACA7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		40A9917A19A22BDD0063ACA7 /* PixelateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PixelateTests-Info.plist"; sourceTree = "<group>"; };
+		40A9917C19A22BDD0063ACA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		40A9917E19A22BDD0063ACA7 /* PixelateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixelateTests.m; sourceTree = "<group>"; };
+		40A9918819A3893E0063ACA7 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		40A9918A19A38F600063ACA7 /* PXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXViewController.h; sourceTree = "<group>"; };
+		40A9918B19A38F600063ACA7 /* PXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXViewController.m; sourceTree = "<group>"; };
+		40A9918D19A9B5E70063ACA7 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40A9915319A22BDC0063ACA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A9915C19A22BDC0063ACA7 /* CoreGraphics.framework in Frameworks */,
+				40A9915E19A22BDC0063ACA7 /* UIKit.framework in Frameworks */,
+				40A9915A19A22BDC0063ACA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A9916E19A22BDD0063ACA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A9917319A22BDD0063ACA7 /* XCTest.framework in Frameworks */,
+				40A9917519A22BDD0063ACA7 /* UIKit.framework in Frameworks */,
+				40A9917419A22BDD0063ACA7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A9914D19A22BDC0063ACA7 = {
+			isa = PBXGroup;
+			children = (
+				40A9915F19A22BDC0063ACA7 /* Pixelate */,
+				40A9917819A22BDD0063ACA7 /* PixelateTests */,
+				40A9915819A22BDC0063ACA7 /* Frameworks */,
+				40A9915719A22BDC0063ACA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40A9915719A22BDC0063ACA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40A9915619A22BDC0063ACA7 /* Pixelate.app */,
+				40A9917119A22BDD0063ACA7 /* PixelateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40A9915819A22BDC0063ACA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40A9915919A22BDC0063ACA7 /* Foundation.framework */,
+				40A9915B19A22BDC0063ACA7 /* CoreGraphics.framework */,
+				40A9915D19A22BDC0063ACA7 /* UIKit.framework */,
+				40A9917219A22BDD0063ACA7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40A9915F19A22BDC0063ACA7 /* Pixelate */ = {
+			isa = PBXGroup;
+			children = (
+				40A9916819A22BDC0063ACA7 /* PXAppDelegate.h */,
+				40A9918819A3893E0063ACA7 /* MainStoryboard.storyboard */,
+				402C9FB319BF45D200008DFA /* PXComposeView.h */,
+				402C9FB419BF45D200008DFA /* PXComposeView.m */,
+				40A9918D19A9B5E70063ACA7 /* ReadMe.txt */,
+				40A9918A19A38F600063ACA7 /* PXViewController.h */,
+				40A9918B19A38F600063ACA7 /* PXViewController.m */,
+				40A9916919A22BDC0063ACA7 /* PXAppDelegate.m */,
+				40A9916B19A22BDC0063ACA7 /* Images.xcassets */,
+				40A9916019A22BDC0063ACA7 /* Supporting Files */,
+			);
+			path = Pixelate;
+			sourceTree = "<group>";
+		};
+		40A9916019A22BDC0063ACA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40A9916119A22BDC0063ACA7 /* Pixelate-Info.plist */,
+				40A9916219A22BDC0063ACA7 /* InfoPlist.strings */,
+				40A9916519A22BDC0063ACA7 /* main.m */,
+				40A9916719A22BDC0063ACA7 /* Pixelate-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40A9917819A22BDD0063ACA7 /* PixelateTests */ = {
+			isa = PBXGroup;
+			children = (
+				40A9917E19A22BDD0063ACA7 /* PixelateTests.m */,
+				40A9917919A22BDD0063ACA7 /* Supporting Files */,
+			);
+			path = PixelateTests;
+			sourceTree = "<group>";
+		};
+		40A9917919A22BDD0063ACA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40A9917A19A22BDD0063ACA7 /* PixelateTests-Info.plist */,
+				40A9917B19A22BDD0063ACA7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40A9915519A22BDC0063ACA7 /* Pixelate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A9918219A22BDD0063ACA7 /* Build configuration list for PBXNativeTarget "Pixelate" */;
+			buildPhases = (
+				40A9915219A22BDC0063ACA7 /* Sources */,
+				40A9915319A22BDC0063ACA7 /* Frameworks */,
+				40A9915419A22BDC0063ACA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pixelate;
+			productName = Pixelate;
+			productReference = 40A9915619A22BDC0063ACA7 /* Pixelate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40A9917019A22BDD0063ACA7 /* PixelateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40A9918519A22BDD0063ACA7 /* Build configuration list for PBXNativeTarget "PixelateTests" */;
+			buildPhases = (
+				40A9916D19A22BDD0063ACA7 /* Sources */,
+				40A9916E19A22BDD0063ACA7 /* Frameworks */,
+				40A9916F19A22BDD0063ACA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40A9917719A22BDD0063ACA7 /* PBXTargetDependency */,
+			);
+			name = PixelateTests;
+			productName = PixelateTests;
+			productReference = 40A9917119A22BDD0063ACA7 /* PixelateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40A9914E19A22BDC0063ACA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PX;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hongzhihua;
+				TargetAttributes = {
+					40A9917019A22BDD0063ACA7 = {
+						TestTargetID = 40A9915519A22BDC0063ACA7;
+					};
+				};
+			};
+			buildConfigurationList = 40A9915119A22BDC0063ACA7 /* Build configuration list for PBXProject "Pixelate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40A9914D19A22BDC0063ACA7;
+			productRefGroup = 40A9915719A22BDC0063ACA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40A9915519A22BDC0063ACA7 /* Pixelate */,
+				40A9917019A22BDD0063ACA7 /* PixelateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40A9915419A22BDC0063ACA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A9918919A3893E0063ACA7 /* MainStoryboard.storyboard in Resources */,
+				40A9916419A22BDC0063ACA7 /* InfoPlist.strings in Resources */,
+				40A9918E19A9B5E70063ACA7 /* ReadMe.txt in Resources */,
+				40A9916C19A22BDC0063ACA7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A9916F19A22BDD0063ACA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A9917D19A22BDD0063ACA7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40A9915219A22BDC0063ACA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A9918C19A38F600063ACA7 /* PXViewController.m in Sources */,
+				40A9916A19A22BDC0063ACA7 /* PXAppDelegate.m in Sources */,
+				40A9916619A22BDC0063ACA7 /* main.m in Sources */,
+				402C9FB519BF45D200008DFA /* PXComposeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A9916D19A22BDD0063ACA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A9917F19A22BDD0063ACA7 /* PixelateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40A9917719A22BDD0063ACA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40A9915519A22BDC0063ACA7 /* Pixelate */;
+			targetProxy = 40A9917619A22BDD0063ACA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40A9916219A22BDC0063ACA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40A9916319A22BDC0063ACA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		40A9917B19A22BDD0063ACA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40A9917C19A22BDD0063ACA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40A9918019A22BDD0063ACA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		40A9918119A22BDD0063ACA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40A9918319A22BDD0063ACA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixelate/Pixelate-Prefix.pch";
+				INFOPLIST_FILE = "Pixelate/Pixelate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		40A9918419A22BDD0063ACA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixelate/Pixelate-Prefix.pch";
+				INFOPLIST_FILE = "Pixelate/Pixelate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		40A9918619A22BDD0063ACA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pixelate.app/Pixelate";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixelate/Pixelate-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PixelateTests/PixelateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		40A9918719A22BDD0063ACA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pixelate.app/Pixelate";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pixelate/Pixelate-Prefix.pch";
+				INFOPLIST_FILE = "PixelateTests/PixelateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40A9915119A22BDC0063ACA7 /* Build configuration list for PBXProject "Pixelate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A9918019A22BDD0063ACA7 /* Debug */,
+				40A9918119A22BDD0063ACA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A9918219A22BDD0063ACA7 /* Build configuration list for PBXNativeTarget "Pixelate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A9918319A22BDD0063ACA7 /* Debug */,
+				40A9918419A22BDD0063ACA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40A9918519A22BDD0063ACA7 /* Build configuration list for PBXNativeTarget "PixelateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A9918619A22BDD0063ACA7 /* Debug */,
+				40A9918719A22BDD0063ACA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40A9914E19A22BDC0063ACA7 /* Project object */;
+}
