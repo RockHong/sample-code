@@ -1,0 +1,17 @@
+# header
+header1=hello world
+
+
+# cells
+cell_11=nospace
+cell_12 =   
+cell_11=nospace2
+
+cell_21= have space
+
+cell_32 = somedata  # comments
+
+wrong format line...
+
+xxx=yyy
+

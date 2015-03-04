@@ -1,0 +1,12 @@
+# for 'a = b', just let 'a' be [0-9z-aA-Z]+
+
+# we can use arithmetic expr
+aaa1 = (2+3)  / 4 - 8*9
+
+
+# put sql query between 'sql^' and '^' 
+# don't use 'timestamp' in sql query
+xxx = sql^ select count(*) from caldata_table where country='US' and indicator='iach' and decision = 'false'   ^  
+yyy = sql^  select count(*) from caldata_table where country='US' and indicator='iach'  ^
+
+zzz = xxx / yyy

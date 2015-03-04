@@ -1,0 +1,203 @@
+#coding=utf-8
+
+# hong: in below code, there are non-ascii words
+
+import urllib
+import urllib2
+import sys
+import gzip
+import cStringIO
+
+url = 'http://card.cgbchina.com.cn/Channel/11608406'
+#url = 'http://www.google.com'
+
+req = urllib2.Request(url)
+res = urllib2.urlopen(req)
+page = res.read()
+
+
+#reload(sys)
+#sys.setdefaultencoding('gbk')
+#print page.decode('gbk').encode('utf-8')
+
+#page = '#coding:gbk\n' + page
+#print page
+
+
+#fd = open('xxx.html', 'w')
+#fd.write(page)
+#fd.close()
+
+html = page
+if html[:6] == '\x1f\x8b\x08\x00\x00\x00':
+  html = gzip.GzipFile(fileobj = cStringIO.StringIO(html)).read()
+
+html = html.decode('gbk').encode('utf-8')
+print html
+
+
+#todo, libxml2, xpath
+
+
+import HTMLParser
+from HTMLParser import HTMLParser
+
+class MyHTMLParser(HTMLParser):  # if not 'from .. import ..', then write 'HTMLParser.HTMLParser'
+  path_name_tag = ['html', 'body', 'div',   'div',              'div',     'div',           'ul','li','div','div','h3','a']
+  path_name_class = ['',    '',    'main', 'right border merch', 'teihui', 'list_content',  '',   '',  'text', '', '', '']
+  index_name = -1
+  match_deeper_name = False  #todo , not used, to del
+  total_depth = -1
+
+  def __init__(self):
+    HTMLParser.__init__(self)    # call base
+    self.enter_list_content = False
+
+  def handle_starttag(self, tag, attrs):
+    print 'start tag' + tag
+    print str(MyHTMLParser.total_depth + 1) + 'total' + tag + '<'
+    MyHTMLParser.total_depth = MyHTMLParser.total_depth + 1
+
+    if len(MyHTMLParser.path_name_tag) == MyHTMLParser.index_name+1:
+      return
+
+    tag_match = False
+    if tag == MyHTMLParser.path_name_tag[MyHTMLParser.index_name+1]:
+      tag_match = True
+      
+
+    if len(MyHTMLParser.path_name_class[MyHTMLParser.index_name+1]) != 0:
+      for a,v in attrs:
+        #print a
+        #print v
+        #if tag == 'div' and a == 'class' and v == 'list_content':
+        #  self.enter_list_content = True
+        #elif tag == 'div':
+        #  self.normal_div = True
+        if tag_match and a == 'class' and v == MyHTMLParser.path_name_class[MyHTMLParser.index_name+1]:
+          MyHTMLParser.index_name = MyHTMLParser.index_name + 1
+          print tag
+          print v
+          #MyHTMLParser.match_deeper_name = True
+    else:
+      MyHTMLParser.index_name = MyHTMLParser.index_name + 1
+
+    print str(MyHTMLParser.index_name) + 'match total'
+
+  def handle_endtag(self, tag):
+    #pass
+    #pass
+    #if tag == 'div':
+    #  if self.normal_div:
+    #    self.normal_div = False
+    #  elif self.enter_list_content:
+    #    self.enter_list_content = False
+    #if MyHTMLParser.match_deeper_name:
+    #  MyHTMLParser.index_name = MyHTMLParser.index_name - 1
+    #  MyHTMLParser.match_deeper_name = False
+    if MyHTMLParser.total_depth == MyHTMLParser.index_name:
+      MyHTMLParser.total_depth = MyHTMLParser.total_depth - 1
+      MyHTMLParser.index_name = MyHTMLParser.index_name -1
+    else:
+      MyHTMLParser.total_depth = MyHTMLParser.total_depth -1
+
+    print '--end tag' + tag
+    print MyHTMLParser.index_name
+    print str(MyHTMLParser.total_depth) + 'total' + tag + '>' + str(MyHTMLParser.index_name)
+
+  def handle_data(self, data):
+    #if self.enter_list_content:
+    #  print data
+    print '---hanlde data'
+    print MyHTMLParser.index_name
+    print MyHTMLParser.total_depth
+    if MyHTMLParser.index_name == len(MyHTMLParser.path_name_tag) -1:
+      print MyHTMLParser.index_name
+      print data
+
+parser = MyHTMLParser()
+
+parser.feed(html)
+
+
+print "-----------------"
+
+#-------------------------------
+class MyHTMLParser2(HTMLParser):
+  wanted_div = 'list_content'
+
+  def __init__(self):
+    HTMLParser.__init__(self)
+    self.in_wanted_div = False
+    self.level = 0
+    self.catch_name_h3 = False
+    self.catch_name_a = False
+    self.catch_city = False
+    self.catch_class = False
+    self.catch_g = False
+    
+
+  def handle_starttag(self, tag, attrs):
+    if tag == 'div':
+      for a,v in attrs:
+        #print 'avvv ' + a + ' ' + v
+        if a == 'class' and v == self.wanted_div:
+           self.in_wanted_div = True
+    elif tag == 'p':
+      for a,v in attrs:
+        if self.in_wanted_div and a == 'class' and v == 'red':
+          self.catch_g = True
+    
+    if self.in_wanted_div and tag == 'h3':
+      self.catch_name_h3 = True
+      print 'wanted, h3'
+
+    if self.catch_name_h3 and tag == 'a':
+      self.catch_name_a = True
+      print 'h3, a'
+
+    if self.in_wanted_div:
+      self.level = self.level + 1
+
+    print str(self.level) + '<xx> level, ' + tag
+
+  def handle_endtag(self, tag):
+    if self.in_wanted_div:
+      self.level = self.level - 1
+      print str(self.level) + '</xx> level, ' + tag
+
+    if self.level == 0:
+      self.in_wanted_div = False
+
+    print str(self.level) + '</xx> level, ' + tag
+
+  def handle_data(self, data):
+    if self.catch_name_a:
+      print 'name:' + data
+      self.catch_name_a = False
+      self.catch_name_h3 = False
+
+    if self.catch_g :
+      print 'g: ' + data
+      self.catch_g = False
+
+    if self.in_wanted_div:
+      found = data.find(u'城市'.encode('utf-8'))
+      #print type(data)                                  #hong: type()
+      #print type(u'城市:'.encode('utf-8'))
+      print 'city：' + str(found)
+      if found != -1:
+        print 'city:' + data[found + len(u'城市：'.encode('utf-8')):]
+
+      found = data.find(u'分类：'.encode('utf-8'))
+      if found != -1:
+        print 'class: ' + data[found + len(u'分类：'.encode('utf-8')):]
+      
+
+
+parser = MyHTMLParser2()
+
+parser.feed(html)
+
+
+### city | merchant | class | g | time | address | phone
