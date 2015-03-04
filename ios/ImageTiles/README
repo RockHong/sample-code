@@ -1,0 +1,22 @@
+This is a iOS program that I do to learn iOS developing.
+
+How to play:
+- Press 'Go!' button. In the following view, double-clicking will let you choose image for game. After choose an image, you can zoom it in or out, or move it around. Once done, touch  'ok' button, and game start. The selected image will be divided into small tiles and those tiles will be random order. So drag tiles to reorder them back.
+- In 'Settings' view, you can configure the number of tiles an image is divided.
+Notice: If you run in 'iOS simulator', it may have no picture in photo album. You can save pictures to photo album using safari on simulator, or you can import pictures to relative folder on Mac where 'iOS simulator' stores its photo album data.
+
+To do:
+- Record time used.
+- Add game music.
+- If user choose image by shooting, the program will crash. To figure out whether it is a problem of 'iOS Simulator' or problem of codes.
+
+To improve:
+- Improve design.
+  The relationship between view controllers seem not very good.
+- Improve UI and animation.
+
+Technic used:
+- animation
+- NSUserDefaults for game configure
+- 2d drawing
+- gesture recognizer
